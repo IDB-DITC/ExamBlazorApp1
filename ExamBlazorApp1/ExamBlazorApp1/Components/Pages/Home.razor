@@ -1,0 +1,24 @@
+﻿@page "/"
+@rendermode InteractiveServer
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+<button @onclick="SomeWork">Click</button>
+
+
+<br />
+@value
+
+
+@code{
+	int value = 0;
+	private void SomeWork()
+	{
+		value++;
+		StateHasChanged();
+	}
+
+
+}
